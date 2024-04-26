@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/Assets/Fonts/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url("/Assets/Fonts/Poppins-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold2;
+    src: url("/Assets/Fonts/Poppins-ExtraBold.ttf");
+  }
+
+* {
+    transition: all 0.5s ease;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("/Assets/Backgrounds/6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+
+h1 {
+    position: absolute;
+    top: 5px;
+    color: white;
+    font-family: Poppins-Bold;
+    padding: 10px 20px;
+}
+
+h1:hover {
+    color: black;
+    background: white;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+a {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: black;
+    background: white;
+    transform: scale(1.1);
+}
+
+.Main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    height: 400px;
+    width: 600px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+
+#Themes {
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#Themes:hover {
+    transform: scale(1.1);
+    color: black;
+    background: white;
+}

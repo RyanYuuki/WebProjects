@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/Assets/Fonts/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url("/Assets/Fonts/Poppins-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold2;
+    src: url("/Assets/Fonts/Poppins-ExtraBold.ttf");
+  }
+
+@media screen and (min-width: 300px)
+{
+    .Container{
+        transform: scale(0.6);
+        transition: 0.3s ease;
+    }
+}
+
+
+@media screen and (min-width: 500px)
+{
+    .Container{
+        transform: scale(0.8);
+        transition: 0.3s ease;
+    }
+}
+* {
+   margin: 0; 
+}
+
+body {
+    background: url("/Assets/Backgrounds/6.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins';
+    color: white;
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    font-family: Poppins-Bold;
+}
+
+input {
+    padding: 20px 20px;
+    border: none;
+    font-size: 35px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    text-align: right;
+    color: white;
+    border: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Buttons {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px 30px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.normal-btn {
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.AC {
+    background-color: darkgreen;
+}
+
+button {
+    margin-top: 10px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    border: none;
+    z-index: 99;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.Container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 10px black; 
+}
+
+.operators {
+    background-color: rgba(33, 33, 137, 0.636)
+}
