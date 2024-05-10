@@ -1,16 +1,16 @@
 @font-face {
     font-family: Poppins;
-    src: url("/Assets/Fonts/Poppins-Regular.ttf");
+    src: url("./Assets/Fonts/Poppins-Regular.ttf");
   }
   
   @font-face {
     font-family: Poppins-Bold;
-    src: url("/Assets/Fonts/Poppins-Bold.ttf");
+    src: url("./Assets/Fonts/Poppins-Bold.ttf");
   }
   
   @font-face {
     font-family: Poppins-Bold2;
-    src: url("/Assets/Fonts/Poppins-ExtraBold.ttf");
+    src: url("./Assets/Fonts/Poppins-ExtraBold.ttf");
   }
 
 @media screen and (min-width: 300px)
@@ -34,7 +34,7 @@
 }
 
 body {
-    background: url("/Assets/Backgrounds/6.png");
+    background: url("./Assets/Backgrounds/6.png");
     display: flex;
     align-items: center;
     justify-content: center;
