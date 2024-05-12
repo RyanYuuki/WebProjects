@@ -58,7 +58,7 @@ Welcome to my repository showcasing various projects built with JavaScript, HTML
 - Features: Displays coordinates of mouse movement.
 - Demo Link: [MouseTracker Demo](https://ryanyuuki.github.io/WebProjects/Tracker/index.html)
 
-### DiscordClone
+### DiscordClone [Incomplete]
 - Description: A simplified version of the Discord interface.
 - Technologies Used: JavaScript, HTML, CSS.
 - Features: Chat functionality with user avatars.
