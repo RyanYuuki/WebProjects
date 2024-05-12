@@ -40,11 +40,12 @@ h1 {
 h1:hover {
     color: black;
     background: white;
-    transform: scale(1.1);
+    transform: translateY(-15px);
+    scale: 1.1;
     border-radius: 10px;
 }
 
-a {
+a, button {
     display: grid;
     place-items: center;
     width: 120px;
@@ -56,13 +57,18 @@ a {
     border-radius: 10px;
 }
 
-a:hover {
+button {
+    background: transparent;
+}
+
+a:hover , button:hover{
     color: black;
     background: white;
     transform: scale(1.1);
+    border-width: 2px;
 }
 
-.Main {
+.Main, .NextPage {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
