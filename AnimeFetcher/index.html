@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Anime Api</title>
+  </head>
+  <body>
+    <div class="Container">
+      <h1 class="Title">Anime Fetcher</h1>
+      <div class="searchType">
+      <div class="Type" onclick="fetchType('Random')">Random</div>
+      <div class="Type" onclick="fetchType('Anime')">Anime</div>
+      <div class="Type" onclick="fetchType('Character')">Character</div>  
+      </div>
+      <div class="inputBox">
+        <input type="text" class="searchBar" />
+        <button class="hover" onclick="searchAnime(searchType)">Search</button>
+      </div>
+      <div class="QuoteBar">
+        <h3 class="Quote"></h3>
+        <h3 class="Reference"></h3>
+      </div>
+     
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./Assets/Fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./Assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold2;
+  src: url("./Assets/Fonts/Poppins-ExtraBold.ttf");
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./Assets/Backgrounds/1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+  font-family: "Poppins";
+}
+
+.container {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 17px;
+  background: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 15px lightblue inset;
+  transition: 0.5s ease-in-out;
+}
+
+.container div {
+  display: grid;
+  place-items: center;
+  background: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  height: 70px;
+  width: 70px;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 40px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#Points {
+  position: absolute;
+  bottom: 30px;
+  width: 190px;
+  padding: 15px 40px;
+  border: 1px solid;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  font-size: 38px;
+  text-align: center;
+  font-family: Poppins-Bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.5s ease;
+}
+
+h1:hover {
+  color: black;
+  background: white;
+  transform: scale(1.2);
+}
+
+#msg {
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  color: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  height: 400px;
+  width: 370px;
+  display: none;
+  place-items: center;
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  box-shadow: 0 0 7px black;
+}
+#msg button {
+  padding: 10px 30px;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.8);
+  margin-top: 140px;
+}
+
+.container div:hover {
+  transform: scale(1.1);
+}
+
+button:active,
+.container div:active {
+  transform: scale(0.9);
+}
+
+#Points:hover {
+  color: black;
+  background: white;
+  transform: scale(1.1);
+}
+
+.Misc-container {
+  border: 2px solid;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 120px;
+  height: 140px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+#Misc {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 20px;
+  width: 140px;
+  height: 150px;
+}
+
+#Misc #timeCard {
+  position: absolute;
+  top: 10px;
+  right: 32px;
+  background: transparent;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  font-size: 20px;
+  z-index: 2;
+}
+
+#Misc #timeCard:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  background: white;
+  color: black;
+}
+
+#timeCard:hover ~ .Misc-container,
+#Misc:hover > .Misc-container {
+  border: 1px solid;
+  transform: scale(1);
+}
+
+#timeCard:hover ~ button,
+#Misc:hover > button {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+#Misc button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 100px;
+  right: 45px;
+  transform: scale(0);
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+#Themes:hover {
+  color: black;
+  background: white;
+}
+
+.Title,
+.Back {
+  position: absolute;
+  padding: 10px 20px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Title {
+  transition: 0.5s ease-in-out;
+}
+.Back {
+  transition: 0.2s ease-in-out;
+}
+
+.Back {
+  padding: 5px 10px;
+  top: 5px;
+  left: 20px;
+}
+
+.Title:hover,
+.Back:hover {
+  transform: scale(1.2);
+  background: white;
+  color: black;
+  border-radius: 12px;
+}
+.Images {
+  position: relative;
+  display: none;
+  flex-wrap: wrap;
+  max-width: 650px;
+  height: 350px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.5s ease;
+}
+
+.Images img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Images img:hover {
+  transform: scale(1.1);
+}
+
+.Images img:active {
+  transform: scale(0.9);
+}
+
+.Title:active,
+.Back:active {
+  transform: scale(0.9);
+}
+
+button {
+  cursor: pointer;
+}
+
+.gameMode {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 17px;
+  background: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 5px lightblue;
+}
+
+.gameMode button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  height: 70%;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.2);
+  transition: 0.5s ease;
+}
+
+.gameMode button:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: white;
+}
+
+.gameMode button:active {
+  transform: scale(0.9);
+}
+
+ion-icon {
+  margin-bottom: 35px;
+  transform: scale(2);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Board Game</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+
+    <div id="Misc">
+      <div id="timeCard"></div>
+      <div class="Misc-container"></div>
+      <button onclick="Themes()" id="Themes">Themes</button>
+    </div>
+
+    <div id="msg">
+      <h1 id="Decider">You Won!</h1>
+      <button id="resetBtn">Restart</button>
+      <h3 id="Remark">You are Good!</h3>
+    </div>
+
+    <div class="Images">
+      <h3 onclick="revertTheme()" class="Back"><</h3>
+      <h3 onclick="randomTheme()" class="Title">Themes</h3>
+      <img src="./Assets/Backgrounds/1.svg" alt="1.svg" />
+      <img src="./Assets/Backgrounds/2.svg" alt="2.svg" />
+      <img src="./Assets/Backgrounds/3.svg" alt="3.svg" />
+      <img src="./Assets/Backgrounds/4.svg" alt="4.svg" />
+      <img src="./Assets/Backgrounds/5.svg" alt="5.svg" />
+      <img src="./Assets/Backgrounds/6.png" alt="6.png" />
+    </div>
+
+    <div class="gameMode">
+      <button><ion-icon name="person-outline"></ion-icon> 1 Player</button>
+      <button><ion-icon name="people-outline"></ion-icon> 2 Player</button>
+    </div>
+    <div class="container">
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+      <div id="btn"></div>
+    </div>
+    <div id="Points">
+      <div>User Points: 0</div>
+      <div>Computer Points: 0</div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

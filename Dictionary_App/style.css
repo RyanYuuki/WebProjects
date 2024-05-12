@@ -1,0 +1,96 @@
+:root {
+    --clr--primary-clr: #ae9cff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--clr--primary-clr);
+    font-family: Poppins;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
+button {
+    border: 1px solid;
+    padding: 10px 20px;
+    background-color: var(--clr--primary-clr);
+    color: white;
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--clr--primary-clr);
+    outline: none;
+    width: 60%;
+}
+
+.Body {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 0px 10px;
+    height: 20%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Body h1 {
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+ion-icon {
+    transform: translateX(130px);
+    font-size: 30px;
+    color: var(--clr--primary-clr);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 90%;
+    padding: 0px 10px;
+}
+
+.MeaningExample {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.MeaningExample .Example {
+    padding: 5px 10px;
+    border-left: 4px solid var(--clr--primary-clr);
+    background-color: rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.Pronounciation {
+    position: absolute;
+}

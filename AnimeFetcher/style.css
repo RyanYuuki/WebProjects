@@ -1,0 +1,118 @@
+root {
+    --clr--primaryAccent: rgb(77, 23, 77);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Poppins;
+}
+
+.Container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.Container h1 {
+    text-align: center;
+    height: 10%;
+}
+
+.searchType {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.Type {
+    background-color: #e8dfdf;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: 0.5s ease;
+}
+
+.Type:hover {
+    background-color: rgb(247, 105, 54);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Type:active {
+    background-color: rgb(247, 105, 54);
+    color: white;
+    transform: scale(0.8);
+}
+
+.Active {
+    background-color: rgb(247, 105, 54);
+    color: white;
+}
+
+.inputBox {
+    margin-top: 5%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 90%;
+}
+
+input {
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #e8dfdf;
+    border: none;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+button {
+    right: 5%;
+    position: absolute;
+    padding: 15px 20px;
+    border-radius: 35px;
+    border: none;
+    background: rgb(247, 105, 54);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.QuoteBar {
+    display: grid;
+    place-items: center;
+    width: 90%;
+    border: 1px solid;
+    margin-top: 5%;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.Quote {
+    text-align: center;
+    word-break: break-all;   
+    overflow-y: scroll;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+.hover:active {
+    transform: scale(0.8);
+}

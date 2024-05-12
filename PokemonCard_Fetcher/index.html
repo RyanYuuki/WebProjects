@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Pokemon Card Fetcher</title>
+</head>
+<body>
+    <div class="Card">
+
+        <div class="Curve"></div>
+
+        <div class="HP">HP<span>60</span></div>
+        <div class="Sprite"></div>
+        <div style="font-weight: 800;" class="Name">Sample Name</div>
+
+        <div style="color: white; font-weight: 600; text-transform: capitalize;" class="Type"></div>
+
+        <div style="margin-top: 20px;" class="Attributes">
+            <div class="Attribute">
+                <div class="Num">60</div>
+                <div class="Title">Attack</div>
+            </div>
+            <div class="Attribute">
+                <div class="Num">60</div>
+                <div class="Title">Defense</div>
+            </div>
+            <div class="Attribute">
+                <div class="Num">60</div>
+                <div class="Title">Speed</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div  onclick="fetchData()" class="Generate">Generate Card</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
