@@ -227,6 +227,7 @@ button:hover {
 }
 
 .Loading {
+  display: grid;
   place-items: center;
   position: relative;
   width: 80%;
