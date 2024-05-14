@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: rgb(255, 164, 178);
   background-image: url("1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -227,21 +227,19 @@ button:hover {
 }
 
 .Loading {
+  place-items: center;
   position: relative;
   width: 80%;
-  background-color: rgb(253, 158, 172);
-  color: white;
+  background-color: #eee;
+  color: black;
   border: 1px solid;
   border-radius: 10px;
   padding: 50px 0px;
-  text-align: center;
-  text-wrap: nowrap;
 }
 
 .loader {
   position: absolute;
   bottom: 15px;
-  left: 45%;
   width: 60px;
   aspect-ratio: 4;
   --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
