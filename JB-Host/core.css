@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/Assets/Fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("/Assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Bold2;
+    src: url("/Assets/Fonts/Poppins-ExtraBold.ttf");
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Poppins;
+    background-image: url("/Assets/Backgrounds/5.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    font-family: Poppins-Bold;
+    padding: 10px 70px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    transition: 0.5s ease-in-out;
+}
+
+h1:hover {
+    color: black;
+    background: white;
+    transform: scale(1.1);
+}
+
+.Container {
+    display: grid;
+    place-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    margin-top: 50px;
+}
+
+button {
+    padding: 7px 20px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: Poppins;
+    background: rgb(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover {   
+    color: black;
+    background: white;
+    transform: scale(1.1);
+}
+
+.Buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 20px;
+}

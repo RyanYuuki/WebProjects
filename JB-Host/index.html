@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="core.css">
+    <title>PS4 - 9.00</title>
+    <!--int64-->
+    <script src="./int64.js"></script>
+    <!--kexploit-->
+    <script src="./kexploit.js"></script>
+    <!--rop-->
+    <script src="./rop.js"></script>
+    <!--webkit-->
+    <script src="./webkit.js"></script>
+    <!--Exploit-->
+    <script src="./loader.js"></script>
+    <script src="./payload.js"></script>
+    <!--Notification JS-->
+    <script>
+        function loadmsg() {
+            document.getElementById('notify').style.display = ''
+            document.getElementById('notify').className = 'notification'
+            document.getElementById('log').innerHTML = ShowMSG
+        }
+        function ani2() {
+            document.getElementById('notify').className = 'notification + notification2'
+            setTimeout(hide, 400)
+        }
+        function hide() {
+            document.getElementById('notify').style.display = 'none'
+        }
+        
+    </script>
+</head>
+<body onload="setTimeout(poc, 1000)">
+    <!--Notification Area-->
+        <h1>PS4 Exploit</h1>
+    <div class="Container">
+        <div class="Buttons">
+            <button onclick="GoldHEN212()">★GoldHEN 2.1.2</button>
+            <button onclick="GoldHEN224()">★GoldHEN 2.2.4</button>
+            <button onclick="GoldHEN23()">★GoldHEN 2.3</button>
+            <button onclick="GoldHEN24b14()">★GoldHEN 2.4b14</button>
+        </div>
+        <div class="Buttons">
+            <button onclick="ps4debug()">PS4 Debug</button>
+            <button onclick="app2usb()">App2USB</button>
+            <button onclick="appdumper()">App Dumper</button>
+            <button onclick="dbbackup()">DB Backup</button>
+        </div>
+        <div class="Buttons">
+            <button onclick="dbrestore()">DB Restore</button>
+            <button onclick="dupdate()">Disable Update</button>
+            <button onclick="eupdate()">Enable Update</button>
+        </div>
+        <div class="Buttons">
+            <button onclick="exitidu()">Exit IDU</button>
+            <button onclick="kerneldumper()">Dump Kernel</button>
+            <button onclick="moduledumper()">Dump Module</button>
+        </div>
+        <div class="Buttons">
+            <button class="glass" onclick="webrte()">Web RTE</button>
+            <a href="cache.html"><button class="glass">Cache</button></a>
+        </div>
+        
+       
+       
+       
+    </div>
+</body>
+</html>
