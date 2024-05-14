@@ -1,16 +1,25 @@
+@media only screen and (max-width: 600px) {
+    .Main, .NextPage {
+        height: 50%;
+        width: 100%;
+        font-size: 15px;
+        transform: scale(0.8);
+    }
+  }
+
 @font-face {
     font-family: Poppins;
-    src: url("./Assets/Fonts/Poppins-Regular.ttf");
+    src: url("../Assets/Fonts/Poppins-Regular.ttf");
   }
   
   @font-face {
     font-family: Poppins-Bold;
-    src: url("./Assets/Fonts/Poppins-Bold.ttf");
+    src: url("../Assets/Fonts/Poppins-Bold.ttf");
   }
   
   @font-face {
     font-family: Poppins-Bold2;
-    src: url("./Assets/Fonts/Poppins-ExtraBold.ttf");
+    src: url("../Assets/Fonts/Poppins-ExtraBold.ttf");
   }
 
 * {
@@ -22,7 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url("./Assets/Backgrounds/6.png");
+    background: url("../Assets/Backgrounds/6.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

@@ -29,6 +29,7 @@ body {
     overflow: hidden;
     z-index: 99;
     padding: 10px 20px;
+    margin-bottom: 80px
 }
 
 .HP {
@@ -60,7 +61,7 @@ body {
 
 .Sprite img {
     width: 80%;
-    height: 80%;
+    height: 60%;
     transform: scale(1.5);
 }
 
@@ -113,4 +114,8 @@ body {
 .Type {
     padding: 5px 20px;
     border-radius: 20px;
+}
+
+.Num {
+    font-weight: 700;
 }

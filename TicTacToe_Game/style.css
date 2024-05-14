@@ -1,16 +1,16 @@
 @font-face {
   font-family: Poppins;
-  src: url("./Assets/Fonts/Poppins-Regular.ttf");
+  src: url("../Assets/Fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url("./Assets/Fonts/Poppins-Bold.ttf");
+  src: url("../Assets/Fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: Poppins-Bold2;
-  src: url("./Assets/Fonts/Poppins-ExtraBold.ttf");
+  src: url("../Assets/Fonts/Poppins-ExtraBold.ttf");
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("./Assets/Backgrounds/1.svg");
+  background-image: url("../Assets/Backgrounds/1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

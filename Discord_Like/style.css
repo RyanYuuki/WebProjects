@@ -1,16 +1,16 @@
 @font-face {
       font-family: Poppins;
-      src: url("./Assets/Fonts/Poppins-Regular.ttf");
+      src: url("../Assets/Fonts/Poppins-Regular.ttf");
     }
     
     @font-face {
       font-family: Poppins-Bold;
-      src: url("./Assets/Fonts/Poppins-Bold.ttf");
+      src: url("../Assets/Fonts/Poppins-Bold.ttf");
     }
     
     @font-face {
       font-family: Poppins-Bold2;
-      src: url("./Assets/Fonts/Poppins-ExtraBold.ttf");
+      src: url("../Assets/Fonts/Poppins-ExtraBold.ttf");
     }
 
 body {
@@ -226,7 +226,7 @@ h4 {
     box-shadow: 0 0 10px black;
     height: 25%;
     border-radius: 15px;
-    background: url("./Assets/Backgrounds/6.png");
+    background: url("../Assets/Backgrounds/6.png");
     background-size: cover;
 }
 
@@ -260,7 +260,7 @@ h4 {
     height: 90%;
     border-radius: 10px;
     width: 40%;
-    background: url("./Assets/Backgrounds/6.png");
+    background: url("../Assets/Backgrounds/6.png");
     background-size: cover;
     text-wrap: wrap;
     overflow: none;
@@ -362,7 +362,7 @@ h4 {
     border-color: lightblue;
     box-shadow: 0 0 10px lightblue;
     border-radius: 50px;
-    background-image: url("./Assets/userIcons/2.png");
+    background-image: url("../Assets/userIcons/2.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

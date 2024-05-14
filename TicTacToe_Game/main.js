@@ -283,7 +283,7 @@ function randomTheme() {
         randNum = Math.floor(Math.random() * 6) + 1;
     }
     if (randNum == 6) {
-        document.body.style.backgroundImage = 'url("./Assets/Backgrounds/6.png")';
+        document.body.style.backgroundImage = 'url("../Assets/Backgrounds/6.png")';
     }
     else {
         document.body.style.backgroundImage = `url("../Assets/Backgrounds/${randNum}.svg")`;

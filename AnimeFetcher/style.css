@@ -1,5 +1,5 @@
-root {
-    --clr--primaryAccent: rgb(77, 23, 77);
+:root {
+    --clr--primaryAccent:  #ae9cff;
 }
 
 body {
@@ -35,27 +35,27 @@ body {
 }
 
 .Type {
-    background-color: #e8dfdf;
+    background-color: #eee;
     border-radius: 20px;
     padding: 5px 15px;
     transition: 0.5s ease;
 }
 
 .Type:hover {
-    background-color: rgb(247, 105, 54);
+    background-color: var(--clr--primaryAccent);
     color: white;
     cursor: pointer;
     transform: scale(1.1);
 }
 
 .Type:active {
-    background-color: rgb(247, 105, 54);
+    background-color: var(--clr--primaryAccent);
     color: white;
     transform: scale(0.8);
 }
 
 .Active {
-    background-color: rgb(247, 105, 54);
+    background-color: var(--clr--primaryAccent);
     color: white;
 }
 
@@ -71,7 +71,7 @@ input {
     width: 80%;
     padding: 15px 20px;
     border-radius: 20px;
-    background-color: #e8dfdf;
+    background-color: #eee;
     border: none;
     outline: none;
     transition: 0.5s ease;
@@ -83,7 +83,7 @@ button {
     padding: 15px 20px;
     border-radius: 35px;
     border: none;
-    background: rgb(247, 105, 54);
+    background: var(--clr--primaryAccent);
     color: white;
     transition: 0.5s ease;
     cursor: pointer;
