@@ -2,7 +2,13 @@ let img = '';
 const Images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
 let index = 0;
 const Loader = document.getElementsByClassName("Loading")[0];
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.body.style.backgroundImage = "url('')";
+});
+
 window.onload = () => {
+  document.body.style.backgroundImage = "url('1.jpg')";
   Loader.style.display = 'none';
   document.getElementById("container").style.display = "flex";
 };

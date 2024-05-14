@@ -13,6 +13,7 @@ https://codepen.io/ecemgo/pen/Baqpbez */
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins',sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
 body {
@@ -228,8 +229,7 @@ button:hover {
 .Loading {
   position: relative;
   width: 80%;
-  background-color: rgb(255, 255,255, 0.1);
-  backdrop-filter: blur(20px);
+  background-color: rgb(253, 158, 172);
   color: white;
   border: 1px solid;
   border-radius: 10px;
