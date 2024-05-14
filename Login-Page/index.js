@@ -1,6 +1,11 @@
 let img = '';
 const Images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
 let index = 0;
+const Loader = document.getElementsByClassName("Loading")[0];
+window.onload = () => {
+  Loader.style.display = 'none';
+  document.getElementById("container").style.display = "flex";
+};
 
 function changeTheme() {
     document.getElementById("theme").style.display = "none";

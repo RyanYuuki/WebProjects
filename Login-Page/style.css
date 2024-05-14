@@ -59,7 +59,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(55px);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 2rem 3rem;
@@ -223,4 +223,37 @@ button:hover {
   color: white;
   font-size: 25px;
   font-family: "Poppins";
+}
+
+.Loading {
+  position: relative;
+  width: 80%;
+  background-color: rgb(255, 255,255, 0.1);
+  backdrop-filter: blur(20px);
+  color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 50px 0px;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.loader {
+  position: absolute;
+  bottom: 15px;
+  left: 45%;
+  width: 60px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 100%;
+  animation: l7 1s infinite linear;
+}
+@keyframes l7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
 }
