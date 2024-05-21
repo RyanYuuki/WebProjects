@@ -34,7 +34,13 @@ function applyMethods() {
                     Calculate();
                 }
                 if (e.target.textContent == "/" || e.target.textContent == "*" || e.target.textContent == "-" || e.target.textContent == "+" || e.target.textContent == "-") {
-                    Result.value += e.target.textContent;
+                    if (Result.value[Result.value.length - 1] == "/" || Result.value[Result.value.length - 1] == "*" || Result.value[Result.value.length - 1] == "-" || Result.value[Result.value.length - 1] == "+" || Result.value[Result.value.length - 1] == "-") {
+                        window.alert("Cannot use 2 Operators Simultaneously!");
+                    }
+                    else {
+                        Result.value += e.target.textContent;
+                    }
+                   
                 }
             }
             else {
