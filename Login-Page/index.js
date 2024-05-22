@@ -6,7 +6,6 @@ const Loader = document.getElementsByClassName("Loading")[0];
 document.addEventListener("DOMContentLoaded", function () {
   document.body.style.backgroundImage = "url('')";
 });
-
 window.onload = () => {
   document.body.style.backgroundImage = "url('1.jpg')";
   Loader.style.display = 'none';

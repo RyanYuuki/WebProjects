@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(./wall.png);
+    background-image: url(./background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(20px);
