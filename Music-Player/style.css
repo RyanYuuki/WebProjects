@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  backdrop-filter: blur(50px);
+  background-size: contain;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 520px;
+  width: 420px;
+  padding: 10px 20px;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  color: white;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+  overflow: visible;
+}
+
+.Main .MusicCard {
+  position: relative;
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 30px;
+}
+
+.MusicCard .songTitle {
+  text-wrap: nowrap;
+  font-weight: 800;
+}
+
+.MusicCard .Image {
+  background-image: url(./MusicCovers/Runaway.png);
+  position: absolute;
+  background-size: cover;
+  height: 80%;
+  width: 65%;
+  top: -15%;
+  border-radius: 20px;
+  box-shadow: 0 10px 45px 10px rgb(0, 0, 0, 0.5);
+}
+
+.MusicCard .Image:hover {
+  box-shadow: 0 0 50px rgb(0, 0, 0, 0.9);
+}
+
+.Info {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 60%;
+}
+
+.Main .SeekBar {
+  width: 100%;
+}
+
+.Main .Controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.Controls button {
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: white;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+}
+
+.Controls #Play,
+#Pause {
+  height: 80px;
+  width: 80px;
+}
+
+.Controls button:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+  color: black;
+  transform: scale(1.1);
+}
+
+.Controls button:active {
+  transform: scale(0.6);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 2%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 1%;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: inset 0 5px 5px rgb(0, 0, 0, 0.2);
+  transition: all 0.1s ease-in-out;
+}
+
+#mode-switcher {
+  position: absolute;
+  right: 3%;
+  top: 1%;
+  font-size: 40px;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.5);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: white;
+  padding: 5px;
+}
+
+.sidebar-button {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  font-size: 25px;
+  z-index: 99;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 80%;
+  left: 10%;
+  position: absolute;
+  box-shadow: 0 5px 30px 5px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar--close {
+  transform: translateX(-150%);
+}
+
+.sidebar--open {
+  transform: translateX(-20%);
+}
+
+.sidebar .song:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+  color: black;
+}
+
+.sidebar .song:active {
+  transform: scale(0.8);
+}
+
+.sidebar .songImage {
+  height: 100%;
+  width: 13%;
+  background-size: cover;
+  border: 1px solid;
+  border-radius: 50px;
+  scale: 1.2;
+}
+
+.sidebar .songInfo {
+  width: 80%;
+  border-radius: 15px;
+  padding: 0 30px;
+
+  .Title {
+    font-weight: 700;
+    text-wrap: nowrap;
+  }
+  .artistName {
+    font-weight: 300;
+  }
+}
+
+.songDuration {
+  position: relative;
+  height: 100%;
+  width: 5%;
+}
+
+.MusicList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.MusicList .songDuration {
+    font-size: 600;
+    font-size: 13px;
+}
+
+h4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.theme-popup {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 80%;
+  z-index: 99;
+  padding: 10px 20px;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.theme {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.Themes {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 40%;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-button {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 3.5%;
+  right: 6%;
+  padding: 7px;
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+.songArtist {
+  font-weight: 400;
+}
+
+.ListSongs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  height: 8%;
+  width: 90%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.ListSongs:active {
+  transform: scale(0.8);
+}
+
+.Songs--Light {
+  background-color: #eee;
+  color: black;
+}
+.Songs--Dark {
+  background-color: #171717;
+  color: white;
+}
+
+.activeSong {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+.activeSongImage {
+  animation: 5s infinite linear rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

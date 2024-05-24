@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+<body>
+    <audio id="Song" src="./Musics/Mine.mp3"></audio>
+    <div class="Main">
+
+        <div class="MusicCard">
+            <h1 class="songTitle">Song</h1>
+            <h3 class="songArtist">Artist 1</h3>
+            <div id="Image" class="Image"></div>
+        </div>
+
+            <div id="progress-bar" class="progress-bar">
+                <div id="seekBar" class="progress"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-between;" class="duration">
+                <div class="currDuration">00.00</div>
+                <div class="fullDuration">03.09</div>
+            </div>
+        
+        <div class="Controls">
+            <button onclick="LoopSong()" id="Loop"><ion-icon name="infinite-outline"></ion-icon></button>
+            <button onclick="PrevSong()" id="PrevSong"><ion-icon name="play-skip-forward-outline"></ion-icon></button>
+            <button onclick="PlaySong()" id="Play"><ion-icon name="play-outline"></ion-icon></button>
+            <button onclick="PauseSong()" id="Pause" style="display: none;"><ion-icon name="pause-outline"></ion-icon></button>
+            <button onclick="NextSong()" id="NextSong"><ion-icon name="play-skip-back-outline"></ion-icon></button>
+            <button onclick="ShuffleSong()" id="Shuffle"><ion-icon name="shuffle-outline"></ion-icon></button>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/color.js@1.2.0/dist/color.js"></script>    
+    <script src="main.js"></script>
+</body>
+</html>

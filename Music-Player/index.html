@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <!--- Theme Selector -->
+    <div id="theme-popup" class="theme-popup">
+      <h1>Themes</h1>
+     <div class="Wrapper">
+      <div class="Themes">
+        <div style="background-color: rgb(255,255,255,0.1)" class="theme"></div>
+        <h3>Glassy</h3>
+        </div>
+        <div class="Themes">
+        <div style="background-color: white" class="theme"></div>
+        <h3>Material</h3>
+      </div>
+     </div>
+    </div>
+    <!-- Theme Selector (End) -->
+
+    <!-- Side Bar -->
+    <div id="sidebar-button" class="sidebar-button"><i id="icon" class="fa-solid fa-angle-right"></i></div>
+    <div id="sidebar" class="sidebar sidebar--close" style= "width: 30%">
+      <div onclick="evokeTheme()" class="theme-button"><i class="fa-solid fa-palette"></i></div>
+        <h1 style="text-align: center;">Songs</h1>
+        <div id="MusicList" class="MusicList">
+            <div class="ListSongs Songs--Light">
+                <div style="background-image: url('./MusicCovers/Mine.png')" class="songImage"></div>
+                <div class="songInfo">
+                    <div class="Title">Mine</div>
+                    <div class="artistName">Bazzi</div>
+                </div>
+                <div class="songDuration">
+                    <h4>03:09</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Side Bar (End) -->    
+        
+    
+    <!-- Dark / Light Mode Switch -->
+   <div id="mode-switcher"></div>
+    <!-- Dark / Light Mode Switch (End) -->
+
+    <!-- Music Player -->
+    <audio id="Song" src="./Musics/Runaway.mp3"></audio>
+    <div class="Main">
+        <div class="MusicCard">
+            <div id="Image" class="Image"></div>
+            <div class="Info">
+                <h2 class="songTitle">Runaway</h2>
+                <h3 class="songArtist">Aurora</h3>
+            </div>
+        </div>
+
+            <div id="progress-bar" class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-between;" class="duration">
+                <div class="currDuration">00:00</div>
+                <div class="fullDuration">04:09</div>
+            </div>
+        
+        <div class="Controls">
+            <button style="font-size: 30px; font-weight: 900;" onclick="LoopSong()" id="Loop"><ion-icon name="infinite-outline"></ion-icon></button>
+            <button onclick="PrevSong()" id="PrevSong"><i class="fa-solid fa-backward"></i></button>
+            <button onclick="PlaySong()" id="Play"><i class="fa-solid fa-play"></i></button>
+            <button onclick="PauseSong()" id="Pause" style="display: none;"><i class="fa-solid fa-pause"></i></button>
+            <button onclick="NextSong()" id="NextSong"><i class="fa-solid fa-forward"></i></button>
+            <button style="font-size: 30px; font-weight: 900;"  onclick="ShuffleSong()" id="Shuffle"><ion-icon name="shuffle-outline"></ion-icon></button>
+        </div>
+
+    </div>
+     <!-- Music Player (End) -->
+     
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/b85efdee63.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/color.js@1.2.0/dist/color.js"></script>    
+    <script src="main.js"></script>
+</body>
+</html>
