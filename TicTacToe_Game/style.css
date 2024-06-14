@@ -1,3 +1,20 @@
+@media  screen and (max-width:500px ){
+  .container {
+    scale: 0.9;
+    transform: translateY(-30px);
+  }
+  .container div {
+    transform: scale(0.9);
+  }
+  #Points {
+    scale: 0.9;
+    transform: translateY(-45px);
+  }
+  #Misc {
+    display: none;
+  } 
+}
+
 @font-face {
   font-family: Poppins;
   src: url("../Assets/Fonts/Poppins-Regular.ttf");
@@ -17,12 +34,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   background-image: url("../Assets/Backgrounds/1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: sans-serif;
+  gap: 30px;
   color: white;
   font-family: "Poppins";
 }
@@ -58,7 +76,6 @@ body {
 }
 
 #Points {
-  position: absolute;
   bottom: 30px;
   width: 190px;
   padding: 15px 40px;
@@ -71,21 +88,12 @@ body {
 }
 
 h1 {
-  position: absolute;
-  top: 20px;
   font-size: 38px;
   text-align: center;
   font-family: Poppins-Bold;
   border-radius: 10px;
-  padding: 10px 20px;
-  transition: 0.5s ease;
 }
 
-h1:hover {
-  color: black;
-  background: white;
-  transform: scale(1.2);
-}
 
 #msg {
   position: absolute;
@@ -122,7 +130,7 @@ button:active,
 #Points:hover {
   color: black;
   background: white;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .Misc-container {

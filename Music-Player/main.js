@@ -16,7 +16,7 @@ const MusicList = [
   { name: "OverNight", source: "./Musics/Overnight.mp3", artistName: "Queen Herby", imgSource: "./MusicCovers/Overnight.png", Duration: '02:41' }
 ];
 const TransparentThemes = [
-  { Name: "Light", Accent: "rgb(255, 255, 255, 0.3)",textColor: "black" },
+  { Name: "Light", Accent: "rgb(255, 255, 255, 0.3)", textColor: "black" },
   { Name: "Dark", Accent: "rgb(0, 0, 0, 0.1)", textColor: "white" },
   { themeName: 'Transparent' }
 ];
@@ -132,13 +132,10 @@ function seekColor() {
   catch (err) { console.log(err); }
 }
 
-function PlaySong() {
+function InitializeSongs() {
   applySongEffect();
   seekColor();
   songElmt.src = MusicList[index].source;
-  songElmt.play();
-  playElmt.style.display = "none";
-  pauseElmt.style.display = "grid";
   document.body.style.backgroundImage = `url('${MusicList[index].imgSource}')`;
   MusicCardElmt.innerHTML = `
     <div style="background-image: url('${MusicList[index].imgSource}');" id="Image" class="Image"></div>
@@ -165,6 +162,14 @@ function PlaySong() {
         <div class="currDuration">${(Minute.toString()).padStart(2, "0")}:${(Second.toString()).padStart(2, "0")}</div>
         <div class="fullDuration">${formattedDuration}</div>`
   }, 1000);
+}
+
+InitializeSongs();
+
+function PlaySong() {
+  songElmt.play();
+  playElmt.style.display = "none";
+  pauseElmt.style.display = "grid";
   songElmt.addEventListener('ended', () => {
     if (isLooping) {
       songElmt.currentTime = 0;
